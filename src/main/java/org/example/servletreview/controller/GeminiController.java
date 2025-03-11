@@ -3,7 +3,6 @@ package org.example.servletreview.controller;
 import com.fasterxml.jackson.databind.ObjectMapper;
 import jakarta.servlet.ServletException;
 import jakarta.servlet.annotation.WebServlet;
-import jakarta.servlet.http.HttpServlet;
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 
@@ -13,7 +12,6 @@ import java.net.URI;
 import java.net.http.HttpClient;
 import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
-import java.nio.channels.ReadPendingException;
 import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
@@ -76,5 +74,4 @@ public class GeminiController extends Controller {
             throw new RuntimeException(e);
         }
     }
-
 }
